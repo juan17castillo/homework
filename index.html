@@ -13,88 +13,168 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Nav Bar -->
-    <div class="topnav">
-      <button class="buttonTop"><i class="fas fa-bars"></i></button>
-    </div>
     <!-- Profile -->
-    <div class="background">
-      <div class="profile">
-        <h2 class="name">Juan Manuel Castillo</h2>
-        <h3 class="job">Software Engineer | Universidad ICESI</h3>
-        <p class="aligncenter">
-          <img src="picture.jfif" alt="juan" />
-        </p>
-      </div>
-      <!-- Card description -->
-      <div class="card">
-        <ul class="list">
-          <li class="social"><i class="fab fa-facebook-f"></i></li>
-          <li class="social"><i class="fab fa-twitter"></i></li>
-          <li class="social"><i class="fab fa-linkedin"></i></li>
-          <li class="social"><i class="fab fa-google-plus-g"></i></li>
-          <li class="social"><i class="fab fa-instagram"></i></li>
-        </ul>
-        <p class="paraCard">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only
-          five centuries, but also the leap into electronic typesetting,
-          remaining essentially unchanged.
-        </p>
-        <div class="buttons">
-          <button class="buttonCard"><strong>Download CV</strong></button>
-          <button class="buttonCard"><strong>Contact me</strong></button>
+    <section>
+      <div class="background">
+        <div class="left"></div>
+        <div class="blog-card alt">
+          <div class="meta">
+            <div
+              class="photo"
+              style="
+                background-image: url(https://avatars.githubusercontent.com/u/42068864?s=460&u=ee17e07d6e17d1c714d612fb5b426e614c253ff9&v=4);
+              "
+            ></div>
+          </div>
+          <div class="description">
+            <h1>JUAN CASTILLO</h1>
+            <h2>Software Engineer & UI/UX Expert</h2>
+            <button class="button-presentation">
+              <i class="fas fa-plus"></i>
+            </button>
+            <ul class="tags">
+              <li class="tags-description">
+                <i class="fas fa-envelope"></i>
+                <label class="text-description" for="fas fa-envelope"
+                  >juancastillo9910@gmail.com</label
+                >
+              </li>
+              <li class="tags-description">
+                <i class="fas fa-globe"></i>
+                <label class="text-description" for="fas fa-envelope"
+                  >github.com/juan17castillo</label
+                >
+              </li>
+              <li class="tags-description">
+                <i class="fab fa-skype"></i>
+                <label class="text-description" for="fab fa-skype"
+                  >juan17castillo</label
+                >
+              </li>
+              <li class="tags-description">
+                <i class="fas fa-phone-alt"></i>
+                <label class="text-description" for="fas fa-phone-alt"
+                  >+555 555 55 55</label
+                >
+              </li>
+              <li class="tags-description">
+                <i class="fas fa-map-marker-alt"></i>
+                <label class="text-description" for="fas fa-map-marker-alt"
+                  >12/21 Street, Cali, Colombia</label
+                >
+              </li>
+            </ul>
+            <ul class="list">
+              <li class="social">
+                <a href="https://www.facebook.com/"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="https://www.twitter.com/"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="https://www.gmail.com/"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="https://www.linkedin.com/"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="social">
+                <a href="https://www.github.com/"
+                  ><i class="fas fa-share-alt"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
+    </section>
+    <!-- Card description -->
+    <div class="card">
+      <p class="para-card">
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged.
+      </p>
+      <hr class="line-card" />
+      <div class="buttons">
+        <button class="button-card"><strong>Download CV</strong></button>
+        <button class="button-card"><strong>Contact me</strong></button>
+      </div>
     </div>
-    <!-- EXPERIENCE -->
-    <h1 class="title"><strong>EXPERIENCE</strong></h1>
+
+    <!-- EDUCATION -->
+    <h1 class="title">
+      <strong
+        ><button class="background-icon"><i class="fas fa-book"></i></button
+        >EDUCATION</strong
+      >
+    </h1>
     <div class="container">
       <div class="timeline">
         <ul>
-          <li>
+          <li class="first-item">
             <div class="timeline-content">
-              <h3 class="date">20th may, 2010</h3>
-              <h1>Heading 1</h1>
-              <p>
+              <div class="vl"></div>
+              <h2 class="timeline-title">Systems Engineering</h2>
+              <h3 class="subtitle">Icesi University</h3>
+              <h3 class="date-timeline">January 2020 - Current</h3>
+              <p class="para-timeline">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li class="second-item">
             <div class="timeline-content">
-              <h3 class="date">20th may, 2010</h3>
-              <h1>Heading 2</h1>
-              <p>
+              <div class="vl"></div>
+              <h2 class="timeline-title">Bachelor</h2>
+              <h3 class="subtitle">Liceo Pichincha</h3>
+              <h3 class="date-timeline">January 2010 - December 2016</h3>
+              <p class="para-timeline">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li class="third-item">
             <div class="timeline-content">
-              <h3 class="date">20th may, 2010</h3>
-              <h1>Heading 3</h1>
-              <p>
+              <div class="vl"></div>
+              <h2 class="timeline-title">School</h2>
+              <h3 class="subtitle">Liceo Pichincha</h3>
+              <h3 class="date-timeline">January 2004 - December 2009</h3>
+              <p class="para-timeline">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
               </p>
             </div>
           </li>
-          <li>
+          <li class="fourth-item">
             <div class="timeline-content">
-              <h3 class="date">20th may, 2010</h3>
-              <h1>Heading 4</h1>
-              <p>
+              <div class="vl"></div>
+              <h2 class="timeline-title">Infant</h2>
+              <h3 class="subtitle">Liceo Mi Refugio</h3>
+              <h3 class="date-timeline">January 2003 - December 2004</h3>
+              <p class="para-timeline">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Consectetur tempora ab laudantium voluptatibus aut eos placeat
                 laborum, quibusdam exercitationem labore.
@@ -105,96 +185,114 @@
       </div>
     </div>
     <!-- SKILLS -->
-   
+
     <!-- 1 -->
-    <h1 class="title">SKILLS</h1>
-   
+    <div class="education">
+      <h1 class="title">
+        <strong
+          ><button class="background-icon">
+            <i class="fas fa-sliders-h"></i></button
+          >SKILLS</strong
+        >
+      </h1>
+    </div>
+
     <div class="skill-container">
       <div class="skill-bars">
         <h2 class="titleCard">Professional</h2>
         <div class="bar">
           <div class="info">
             <span>UI/UX Design</span>
+            <span class="percentage">90%</span>
           </div>
-          <div class="progress-line html">
+          <div class="progress-line ui">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Web Application</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line css">
+          <div class="progress-line web">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Android Development</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line jquery">
+          <div class="progress-line android">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Adobe Design Tools</span>
+            <span class="percentage">70%</span>
           </div>
-          <div class="progress-line python">
+          <div class="progress-line adobe">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Microsoft Office</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line mysql">
+          <div class="progress-line office">
             <span></span>
           </div>
         </div>
       </div>
 
       <!-- 2 -->
-      
+
       <div class="skill-bars">
         <h2 class="titleCard">Personal</h2>
         <div class="bar">
           <div class="info">
-            <span>Corn fixed</span>
+            <span>Commited</span>
+            <span class="percentage">100%</span>
           </div>
-          <div class="progress-line html">
+          <div class="progress-line commited">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Punctual</span>
+            <span class="percentage">90%</span>
           </div>
-          <div class="progress-line css">
+          <div class="progress-line punctual">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Leadership</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line jquery">
+          <div class="progress-line leadership">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Communication</span>
+            <span class="percentage">70%</span>
           </div>
-          <div class="progress-line python">
+          <div class="progress-line commu">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Analytical skill</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line mysql">
+          <div class="progress-line ana">
             <span></span>
           </div>
         </div>
@@ -207,45 +305,53 @@
         <div class="bar">
           <div class="info">
             <span>English(Native)</span>
+            <span class="percentage">100%</span>
           </div>
-          <div class="progress-line html">
+          <div class="progress-line english">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Spanish</span>
+            <span class="percentage">90%</span>
           </div>
-          <div class="progress-line css">
+          <div class="progress-line spanish">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>French</span>
+            <span class="percentage">80%</span>
           </div>
-          <div class="progress-line jquery">
+          <div class="progress-line french">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Arabic</span>
+            <span class="percentage">70%</span>
           </div>
-          <div class="progress-line python">
+          <div class="progress-line arabic">
             <span></span>
           </div>
         </div>
         <div class="bar">
           <div class="info">
             <span>Hindi</span>
+            <span class="percentage">60%</span>
           </div>
-          <div class="progress-line mysql">
+          <div class="progress-line hindi">
             <span></span>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- EXPERIENCE -->
+
     <!-- Script -->
     <script src="script.js"></script>
   </body>
