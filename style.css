@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Mulish:wght@300&family=Work+Sans&display=swap");
 
+/* Variables */
+
 :root {
   --menu: #424142;
   --profile: #515052;
   --timeline: #8bd5b5;
   --button-colors: #00ad6b;
-  --on-primary: rgb(250, 250, 250);
-  --on-background: #fbf9fb;
   --list: #d0cfd0;
   --skill: #434243;
   --on-background-text: #5a595b;
   --background: #f3f2f3;
   --box-shadow: 0 3px 3px 1px rgba(0, 0, 0, 0.1);
 }
+
+/* General */
 
 * {
   margin: 0;
@@ -31,13 +33,6 @@ body {
   font-family: Work Sans, sans-serif;
 }
 
-.left {
-  background: url(https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)
-    no-repeat center / cover;
-  width: 100%;
-  height: 400px;
-}
-
 section {
   min-height: 62vh;
   width: 100%;
@@ -45,20 +40,32 @@ section {
   justify-content: center;
 }
 
+
+/* Profile */
+
+.left {
+  background: url(https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80)
+    no-repeat center / cover;
+  width: 100%;
+  height: 400px;
+}
+
 .background {
   flex-direction: column;
   width: 100%;
 }
 
-.title-presentation {
+.title-presentation, .subtitle-presentation {
   font-family: Poppins, sans-serif;
+}
+
+.title-presentation {
   line-height: 1;
   margin: 0;
   font-size: 1.7rem;
 }
 
 .subtitle-presentation {
-  font-family: Poppins, sans-serif;
   font-size: 1rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -66,18 +73,44 @@ section {
   margin-top: 5px;
 }
 
-.read-more {
-  text-align: right;
+.fa-bars {
+  color: royalblue;
+  font-size: 20px;
+}
+.button-background {
+  margin: 30px;
+  padding: 10px;
+  border: 3px;
+  border-color: #424142;
+  background-color: rgba(0, 0, 0, 0.2);
+  outline: none;
+  cursor: pointer;
 }
 
-/*PEN STYLES*/
-
-.vl {
-  height: 170px;
-  border-left: 6px solid #1a75d5;
-  height: 170;
-  float: left;
+.button-background:hover {
+  background-color: rgba(71, 69, 69, 0.2);
 }
+
+.fa-cog {
+  font-size: 20px;
+}
+
+.config-background {
+  float: right;
+  outline: none;
+  margin-top: 324px;
+  padding: 10px;
+  border: 3px;
+  border-color: #424142;
+  background-color: white;
+  cursor: pointer;
+}
+
+.config-background:hover {
+  background-color: rgb(190, 189, 189);
+}
+
+/* Card */
 
 .blog-card {
   margin: auto;
@@ -179,6 +212,7 @@ section {
 .blog-card .description h1 {
   line-height: 1;
   margin: 0;
+  text-transform: uppercase;
   font-size: 1.7rem;
   padding-top: 30px;
 }
@@ -262,48 +296,7 @@ section {
   }
 }
 
-.profile {
-  width: 100%;
-  height: 400px;
-}
-
-.profile img {
-  width: 180px;
-  border: 3px solid white;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  box-shadow: var(--box-shadow);
-}
-
-.aligncenter {
-  text-align: center;
-}
-
-.topnav {
-  background-color: var(--menu);
-  overflow: hidden;
-  box-shadow: var(--box-shadow);
-}
-
-.name {
-  font-size: 28px;
-  color: white;
-  padding-top: 15px;
-  margin: 0;
-  text-align: center;
-}
-
-.job {
-  font-size: 20px;
-  color: white;
-  margin: 0;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-
-.titleCard {
+.title-card {
   text-align: center;
   color: white;
 }
@@ -321,25 +314,6 @@ section {
   text-align: center;
 }
 
-.avatar {
-  width: 200px;
-  margin: 10px;
-  border: 3px solid white;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  box-shadow: 2px 2px 4px #000000;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  text-decoration: none;
-  font-size: 17px;
-}
-
 .card {
   margin: auto;
   margin-top: 40px;
@@ -351,57 +325,10 @@ section {
   transition: 0.3s;
 }
 
-.fa-bars {
-  color: royalblue;
-  font-size: 20px;
-}
-.button-background {
-  margin: 30px;
-  padding: 10px;
-  border: 3px;
-  border-color: #424142;
-  background-color: rgba(0, 0, 0, 0.2);
-  outline: none;
-  cursor: pointer;
-}
-
-.button-background:hover {
-  background-color: rgba(71, 69, 69, 0.2);
-}
-
-.fa-cog {
-  font-size: 20px;
-}
-
-.config-background {
-  float: right;
-  outline: none;
-  margin-top: 324px;
-  padding: 10px;
-  border: 3px;
-  border-color: #424142;
-  background-color: white;
-  cursor: pointer;
-}
-.config-background:hover {
-  background-color: rgb(190, 189, 189);
-}
-
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4caf50;
-  color: white;
-}
 
 .button-presentation {
   float: right;
@@ -425,7 +352,6 @@ section {
   box-shadow: var(--box-shadow);
   transform: translateY(1px);
 }
-
 
 .fa-facebook-f {
   color: white;
@@ -531,8 +457,6 @@ section {
   transform: translateY(1px);
 }
 
-
-
 .list {
   padding-left: 0px;
   padding-bottom: 20px;
@@ -564,29 +488,12 @@ section {
   font-size: 14px;
 }
 
-.education {
-  padding: 60px;
-  display: inline;
-  text-align: center;
-}
-
-.background-action {
-  width: 300px;
-  float: left; /* add this */
-  border: 1px solid red;
-}
-
 .para-card {
   color: var(--on-background-text);
   padding: 30px;
   font-weight: 600;
 }
 
-.buttonTop {
-  padding: 12px;
-  border: none;
-  background: none;
-}
 
 .container {
   min-height: 90vh;
@@ -604,13 +511,17 @@ section {
   position: relative;
 }
 
+.vl {
+  height: 170px;
+  border-left: 6px solid #1a75d5;
+  height: 170;
+  float: left;
+}
+
 .timeline ul {
   list-style: none;
 }
 
-.container-timeline {
-  background-color: var(--skill);
-}
 
 .timeline ul li {
   background-color: white;
