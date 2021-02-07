@@ -13,17 +13,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
     />
-    <link
-      rel="stylesheet"
+    <link 
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    />
+      rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Profile -->
     <section>
       <div class="background">
-        <div class="left"></div>
+        <div class="left">
+          <button class="button-background"><i class="fas fa-bars"></i></button>
+          <button class="config-background"><i class="fas fa-cog"></i></button>
+        </div>
         <div class="blog-card alt">
           <div class="meta">
             <div
@@ -37,7 +39,7 @@
             <h1>JUAN CASTILLO</h1>
             <h2>Software Engineer & UI/UX Expert</h2>
             <button class="button-presentation">
-              <i class="fas fa-plus"></i>
+              <i class="material-icons">add</i>
             </button>
             <ul class="tags">
               <li class="tags-description">
@@ -184,25 +186,29 @@
         </ul>
       </div>
     </div>
+
+
+
+
+
+
+
+    
     <!-- SKILLS -->
 
     <!-- 1 -->
-    <div class="education">
       <h1 class="title">
         <strong
           ><button class="background-icon">
             <i class="fas fa-sliders-h"></i></button
-          >SKILLS</strong
-        >
+          >SKILLS</strong>
       </h1>
-    </div>
-
     <div class="skill-container">
       <div class="skill-bars">
         <h2 class="titleCard">Professional</h2>
         <div class="bar">
           <div class="info">
-            <span>UI/UX Design</span>
+            <button class="modal-open" data-modal="modal1">UI/UX Design</button>
             <span class="percentage">90%</span>
           </div>
           <div class="progress-line ui">
@@ -211,7 +217,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Web Application</span>
+            <button class="modal-open" data-modal="modal2">Web Application</button>
             <span class="percentage">80%</span>
           </div>
           <div class="progress-line web">
@@ -220,7 +226,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Android Development</span>
+            <button class="modal-open" data-modal="modal3">Android Development</button>
             <span class="percentage">80%</span>
           </div>
           <div class="progress-line android">
@@ -229,19 +235,10 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Adobe Design Tools</span>
+            <button class="modal-open" data-modal="modal4">Adobe Design Tools</button>
             <span class="percentage">70%</span>
           </div>
           <div class="progress-line adobe">
-            <span></span>
-          </div>
-        </div>
-        <div class="bar">
-          <div class="info">
-            <span>Microsoft Office</span>
-            <span class="percentage">80%</span>
-          </div>
-          <div class="progress-line office">
             <span></span>
           </div>
         </div>
@@ -253,7 +250,7 @@
         <h2 class="titleCard">Personal</h2>
         <div class="bar">
           <div class="info">
-            <span>Commited</span>
+            <button class="modal-open" data-modal="modal5">Commited</button>
             <span class="percentage">100%</span>
           </div>
           <div class="progress-line commited">
@@ -262,7 +259,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Punctual</span>
+            <button class="modal-open" data-modal="modal6">Punctual</button>
             <span class="percentage">90%</span>
           </div>
           <div class="progress-line punctual">
@@ -271,7 +268,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Leadership</span>
+            <button class="modal-open" data-modal="modal7">Leadership</button>
             <span class="percentage">80%</span>
           </div>
           <div class="progress-line leadership">
@@ -280,19 +277,10 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Communication</span>
+            <button class="modal-open" data-modal="modal8">Communication</button>
             <span class="percentage">70%</span>
           </div>
           <div class="progress-line commu">
-            <span></span>
-          </div>
-        </div>
-        <div class="bar">
-          <div class="info">
-            <span>Analytical skill</span>
-            <span class="percentage">80%</span>
-          </div>
-          <div class="progress-line ana">
             <span></span>
           </div>
         </div>
@@ -304,7 +292,7 @@
         <h2 class="titleCard">Language</h2>
         <div class="bar">
           <div class="info">
-            <span>English(Native)</span>
+            <button class="modal-open" data-modal="modal9">English(Native)</button>
             <span class="percentage">100%</span>
           </div>
           <div class="progress-line english">
@@ -313,7 +301,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Spanish</span>
+            <button class="modal-open" data-modal="modal10">Spanish</button>
             <span class="percentage">90%</span>
           </div>
           <div class="progress-line spanish">
@@ -322,7 +310,7 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>French</span>
+            <button class="modal-open" data-modal="modal11">French</button>
             <span class="percentage">80%</span>
           </div>
           <div class="progress-line french">
@@ -331,27 +319,159 @@
         </div>
         <div class="bar">
           <div class="info">
-            <span>Arabic</span>
+            <button class="modal-open" data-modal="modal12">Arabic</button>
             <span class="percentage">70%</span>
           </div>
           <div class="progress-line arabic">
             <span></span>
           </div>
         </div>
-        <div class="bar">
-          <div class="info">
-            <span>Hindi</span>
-            <span class="percentage">60%</span>
+
+      <!-- MODAL -->
+
+      <div class="modal" id="modal1">
+        <div class="modal-content">
+          <div class="modal-header">UI/UX Design
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
           </div>
-          <div class="progress-line hindi">
-            <span></span>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- EXPERIENCE -->
+      <div class="modal" id="modal2">
+        <div class="modal-content">
+          <div class="modal-header">Web Application
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
 
+      <div class="modal" id="modal3">
+        <div class="modal-content">
+          <div class="modal-header">Android Development
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal4">
+        <div class="modal-content">
+          <div class="modal-header">Adobe Design Tools
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal" id="modal5">
+        <div class="modal-content">
+          <div class="modal-header">Commited
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>  
+
+      <div class="modal" id="modal6">
+        <div class="modal-content">
+          <div class="modal-header">Punctual
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal7">
+        <div class="modal-content">
+          <div class="modal-header">Leadership
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal8">
+        <div class="modal-content">
+          <div class="modal-header">Communication
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal9">
+        <div class="modal-content">
+          <div class="modal-header">English(Native)
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal10">
+        <div class="modal-content">
+          <div class="modal-header">Spanish
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal11">
+        <div class="modal-content">
+          <div class="modal-header">French
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal" id="modal12">
+        <div class="modal-content">
+          <div class="modal-header">Arabic
+            <button class="icon modal-close"><i class="material-icons">close</i></button>
+          </div>
+          <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, maiores?</div>
+          <div class="modal-footer">
+            <button class="link modal-close">Close modal</button>
+          </div>
+        </div>
+      </div>
     <!-- Script -->
     <script src="script.js"></script>
   </body>
